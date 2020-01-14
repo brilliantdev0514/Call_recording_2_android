@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Запись звонков</string>
+
+    <string-array name="source_text">
+        <item>Автоматически (по умолчанию)</item>
+        <item>Телефонная линия</item>
+        <item>Микрофон</item>
+        <item>Системный выбор</item>
+        <item>VoIP</item>
+        <item>Voice Recognition</item>
+        <item>Camcoder</item>
+        <item>Необработанный</item>
+    </string-array>
+
+    <string-array name="themes_text">
+        <item>Тема Светлая</item>
+        <item>Тема Темная</item>
+    </string-array>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44.1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz (по умолчанию)</item>
+        <item>11 kHz</item>
+        <item>8 kHz (телефон)</item>
+    </string-array>
+
+    <string-array name="channels_text">
+        <item>Моно (по умолчанию)</item>
+        <item>Стерео</item>
+    </string-array>
+
+    <string-array name="delete_text">
+        <item>Не удалять записи</item>
+        <item>старше 1 дня</item>
+        <item>старше 1 недели</item>
+        <item>старше 1 месяца</item>
+        <item>старше 3 месяцев</item>
+        <item>старше 6 месяцев</item>
+    </string-array>
+
+    <string-array name="format_text">
+        <item>2017-02-01 09.08.01.wav</item>
+        <item>20170201T090801.wav</item>
+        <item>1512340435 [Входящий номер].wav</item>
+        <item>2017-02-01 09.08.01 ↓↑ [Имя].wav</item>
+    </string-array>
+
+    <string name="action_settings">Настройки</string>
+    <string name="no_folder_app">Программа для просмотра папок не установлена</string>
+    <string name="hold_by_call">пауза (звонок)</string>
+    <string name="encoding">кодировка</string>
+    <string name="pause">пауза</string>
+    <string name="edit">редактор</string>
+    <string name="recording">запись</string>
+    <string name="encoding_title">Кодирование...</string>
+    <string name="recording_title">Запись</string>
+    <string name="title_header">%1$s свободно ~ %2$s</string>
+    <string name="open_recording_folder">Открыть папку с записями</string>
+    <string name="recording_list_is_empty">Список записей пуст.\n\nВключите \'Запись звонков\' чтобы начать записывать звонки.</string>
+    <string name="call_recording">Запись звонков</string>
+    <string name="source_default">(По-умолчанию)</string>
+    <string name="source_mic">(Микрофон)</string>
+    <string name="source_line">(Линия)</string>
+
+    <string name="call_recordings_support">Запись звонков</string>
+    <string name="call_recordings_support_text">Большинство телефонов не поддерживают запись звонков, используйте прошивки с открытым исходным кодом. Пробуйте различные настройки кодирования (ogg, mp3, MediaRecorder), разные источники записи (телефонная линия, микрофон)</string>
+    <string name="recordings_quality">Качество записи</string>
+    <string name="recordings_quality_text">Если программе не удасться записывать в высоком качестве (телефонная линия), программа будет использовать микрофон (в случае ошибки вы можете слышать только свой голос или голос собеседника).</string>
+    <string name="task_managers">Менеджеры памяти</string>
+    <string name="task_managers_text">Если ваш телефон оптимизирует батарею или испольует другие менеджеры памяти включите программу в белый список, чтобы она продолжара работать в фоновом режиме и все звонки были записаны.</string>
+
+    <string name="recording_enabled">Запись включена</string>
+    <string name="recording_disabled">Запись выключена</string>
+    <string name="callrecent_auto_save">Авто сохранение через (%1$d)</string>
+    <string name="calls_out">Ис.</string>
+    <string name="calls_in">Вх.</string>
+    <string name="save_button">Сохранить</string>
+
+    <string name="pref_storage_title">Папка для хранения</string>
+    <string name="pref_rate_title">Частота записи</string>
+    <string name="pref_encoding_title">Кодировка</string>
+    <string name="pref_encoding_summary">Формат выходного файла (.wav, .m4a, ...)</string>
+    <string name="pref_mode_title">Режим</string>
+    <string name="pref_mode_summary">Режим записи</string>
+    <string name="pref_delete_title">Удалять записи</string>
+    <string name="pref_nameformat_title">Формат имени</string>
+    <string name="pref_calldialog_title">Последний звонок</string>
+    <string name="pref_calldialog_summary">Показывать диалог для последнего совершенного звонка</string>
+    <string name="pref_optimization_title">Отключить оптимизацию батареи</string>
+    <string name="pref_optimization_summary">Предотвращать удаление программы из памяти телефона</string>
+    <string name="pref_theme_title">Тема приложения</string>
+    <string name="pref_theme_summary">Установить тему приложения (темная / светлая)</string>
+    <string name="mixer_paths_done">Сисетмный микшер настроен, пожалуйста перегрузите телефон!</string>
+    <string name="mixer_paths_failed">Не получается включить запись звонков</string>
+    <string name="pref_mixerpaths_title">Системный микшер</string>
+    <string name="pref_mixerpaths_summary">Разрешить системному микшеру запись звонков для приложений</string>
+    <string name="pref_recordings">Записи</string>
+    <string name="pref_advanced">Дополнительно</string>
+    <string name="pref_application">Приложение</string>
+    <string name="menu_search">Поиск</string>
+    <string name="send_survey">Отправить Отзыв</string>
+    <string name="survey_know_issues">Известные неисправности:</string>
+    <string name="survey_none">Нет отзывов</string>
+    <string name="survey_bad">Не работает</string>
+    <string name="survey_good">Работает</string>
+    <string name="survey_few_issues">Некоторые проблемы</string>
+    <string name="survey_view">Посмотреть отзывы</string>
+    <string name="survey_status">Статус:</string>
+    <string name="sort_by_contact_z_a">Контакты Я-А</string>
+    <string name="sort_by_contact_a_z">Контакты А-Я</string>
+</resources>

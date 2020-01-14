@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/recording_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <com.github.axet.androidlibrary.widgets.EqualLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/recording_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/ic_star_border_black_24dp"
+                        android:tint="?attr/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/recording_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="middle"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="2016-02-01.wav"
+                        android:textColor="?attr/titleColor"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/recording_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="00:05" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recording_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/recording_call"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_call_made_black_24dp"
+                        android:tint="#00ff00" />
+
+                    <TextView
+                        android:id="@+id/recording_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="2016 02 01" />
+
+                    <FrameLayout
+                        android:id="@+id/moodbar_frame"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1">
+
+                        <com.github.axet.audiolibrary.widgets.MoodbarView
+                            android:id="@+id/moodbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:layout_gravity="right"
+                            android:tint="?android:attr/colorForeground" />
+
+                        <ProgressBar
+                            android:id="@+id/moodbar_progress"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:indeterminate="true" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/recording_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="0.1 MB" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.github.axet.androidlibrary.widgets.EqualLinearLayout>
+
+        <include layout="@layout/recording_player" />
+    </LinearLayout>
+</FrameLayout>

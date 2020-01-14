@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.axet.androidlibrary.widgets.EqualLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recording_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/toolbar_icon_bg"
+            android:button="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="center"
+            android:src="@drawable/ic_list_black_24dp"
+            android:tint="@color/colorBlue" />
+
+        <TextView
+            android:visibility="gone"
+            style="@style/toolbar_icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tolbar_all" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <ImageButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="?attr/toolbar_icon_bg"
+            android:clickable="false"
+            android:gravity="center"
+            android:src="@drawable/ic_star_black_24dp"
+            android:tint="@color/colorBlue" />
+
+        <TextView
+            android:id="@+id/search_header_toolbar_tops_name"
+            android:visibility="gone"
+            style="@style/toolbar_icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tolbar_stars" />
+    </FrameLayout>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/toolbar_icon_bg"
+            android:clickable="false"
+            android:gravity="center"
+            android:src="@drawable/ic_call_received_black_24dp"
+            android:tint="@color/colorBlue" />
+
+        <TextView
+            android:visibility="gone"
+            style="@style/toolbar_icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/calls_in" />
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/toolbar_icon_bg"
+            android:clickable="false"
+            android:gravity="center"
+            android:src="@drawable/ic_call_made_black_24dp"
+            android:tint="@color/colorBlue" />
+
+        <TextView
+            android:visibility="gone"
+            style="@style/toolbar_icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/calls_out" />
+    </FrameLayout>
+
+
+</com.github.axet.androidlibrary.widgets.EqualLinearLayout>

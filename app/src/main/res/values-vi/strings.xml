@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Ghi âm cuộc gọi</string>
+
+    <string-array name="source_text">
+        <item>Tự động (mặc định)</item>
+        <item>Voice Line</item>
+        <item>Mic</item>
+        <item>Mặc định hệ thống</item>
+        <item>VoIP</item>
+        <item>Voice Recognition</item>
+        <item>Camcoder</item>
+        <item>System RAW</item>
+    </string-array>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44.1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz (mặc định)</item>
+        <item>11 kHz</item>
+        <item>8 kHz (điện thoại)</item>
+    </string-array>
+
+    <string-array name="delete_text">
+        <item>Giữ tất cả ghi âm</item>
+        <item>Trong 1 ngày</item>
+        <item>trong 1 tuần</item>
+        <item>trong 1 tháng</item>
+        <item>trong 3 tháng</item>
+        <item>trong 6 tháng</item>
+    </string-array>
+
+    <string-array name="format_text">
+        <item>2017-02-01 09.08.01.wav</item>
+        <item>20170201T090801.wav</item>
+        <item>1512340435 [Số].wav</item>
+        <item>2017-02-01 09.08.01 ↓↑ [Tên].wav</item>
+    </string-array>
+
+    <string-array name="themes_text">
+        <item>Chủ đề trắng</item>
+        <item>Chủ đề đen</item>
+    </string-array>
+
+    <string-array name="channels_text">
+        <item>Mono (Mặc định)</item>
+        <item>Stereo</item>
+    </string-array>
+
+    <string name="action_settings">Cài đặt</string>
+    <string name="call_recording">Ghi âm cuộc gọi</string>
+    <string name="no_folder_app">Không có ứng dụng xem thư mục được cài đặt</string>
+    <string name="hold_by_call">dừng (giữ cuộc gọi)</string>
+    <string name="encoding">Mã hóa</string>
+    <string name="pause">dừng</string>
+    <string name="edit">sửa</string>
+    <string name="recording">đang ghi âm</string>
+    <string name="encoding_title">Đang mã hóa...</string>
+    <string name="recording_title">Đang ghi âm</string>
+    <string name="title_header">%1$s trống ~ %2$s còn lại</string>
+    <string name="open_recording_folder">Mở thư mục ghi âm</string>
+    <string name="recording_list_is_empty">Danh sách trống\n\nKiểm tra \'Ghi âm cuộc gọi\' Để bắt đầu ghi âm cuộc gọi</string>
+
+    <string name="source_default">(Mặc định)</string>
+    <string name="source_mic">(Mic)</string>
+    <string name="source_line">(Voice Line)</string>
+
+    <string name="call_recordings_support">Hỗ trợ ghi âm cuộc gọi</string>
+    <string name="call_recordings_support_text">Hầu hết các điện thoại không hỗ trợ ghi âm cuộc gọi chất lượng cao (đường dây điện thoại) . Để bật ghi âm cuộc gọi, cài đặt firmware mã nguồn mở, chọn tùy chọn mã hóa khác nhau (OGG, MediaRecorder...), các nguồn âm thanh khác nhau (đường dây điện thoại, microphone, VoIP...), hoặc root điện thoại của bạn.</string>
+    <string name="recordings_quality">Chất lượng ghi âm</string>
+    <string name="recordings_quality_text">Nếu điện thoại của bạn không hỗ trợ ghi âm cuộc gọi chất lượng cao, ứng dụng sẽ thử ghi âm cuộc gọi MIC (bạn có thể nghe chỉ có một bên: bạn hoặc đối tác của bạn).</string>
+    <string name="task_managers">Quản lý tác vụ</string>
+    <string name="task_managers_text">Nếu điện thoại của bạn đã bật chức năng tối ưu hóa pin hoặc trình quản lý tác vụ, hãy xem xét tắt chúng để giữ ứng dụng chạy ẩn (tùy chọn)</string>
+
+    <string name="recording_enabled">Đã bật ghi âm</string>
+    <string name="recording_disabled">Đã tắt ghi âm</string>
+    <string name="callrecent_auto_save">Tự động lưu trong (%1$d)</string>
+    <string name="calls_out">Gọi đi</string>
+    <string name="calls_in">Gọi tới</string>
+    <string name="save_button">Lưu</string>
+    <string name="mixer_paths_done">Đã định cấu hình bộ trộn âm. Hãy khởi động lại!</string>
+    <string name="mixer_paths_failed">Không thể cấu hình bộ trộn âm</string>
+
+    <string name="pref_storage_title">Đường dẫn lưu trữ</string>
+    <string name="pref_rate_title">Sample Rate</string>
+    <string name="pref_encoding_title">Mã hóa</string>
+    <string name="pref_encoding_summary">Định dạng đầu ra (.wav, .m4a, ...)</string>
+    <string name="pref_mode_title">Chế độ</string>
+    <string name="pref_mode_summary">Ghi kênh</string>
+    <string name="pref_delete_title">Xóa bản ghi</string>
+    <string name="pref_nameformat_title">Định dạng tên</string>
+    <string name="pref_calldialog_title">Hộp thoại cuộc gọi gần đây</string>
+    <string name="pref_calldialog_summary">Hiển thị đổi tên / hộp thoại đánh dấu sau khi cuộc gọi kết thúc</string>
+    <string name="pref_optimization_title">Vô hiệu hóa tối ưu hóa pin</string>
+    <string name="pref_optimization_summary">Ngăn ứng dụng bị xóa khỏi bộ nhớ</string>
+    <string name="pref_theme_title">Chủ đề ứng dụng</string>
+    <string name="pref_theme_summary">Đặt chủ đề ứng dụng (tối / sáng)</string>
+    <string name="pref_mixerpaths_title">Hệ thống trộn ghi âm cuộc gọi</string>
+    <string name="pref_mixerpaths_summary">Cho phép hệ thống trộn ghi lại cuộc gọi cho các ứng dụng thông thường</string>
+    <string name="pref_recordings">Bản ghi</string>
+    <string name="pref_advanced">Nâng cao</string>
+    <string name="pref_application">Ứng dụng</string>
+    <string name="menu_search">Tìm kiếm</string>
+    <string name="send_survey">Gửi khảo sát</string>
+    <string name="survey_know_issues">Vấn đề đã biết:</string>
+    <string name="survey_none">Chưa khảo sát</string>
+    <string name="survey_bad">Không làm việc</string>
+    <string name="survey_good">Làm việc</string>
+    <string name="survey_few_issues">Vài vấn đề</string>
+    <string name="survey_view">Xem khảo sát</string>
+    <string name="survey_status">Trạng thái:</string>
+    <string name="sort_by_contact_z_a">Contact Z-A</string>
+    <string name="sort_by_contact_a_z">Contact A-Z</string>
+</resources>

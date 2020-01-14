@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">מקליט שיחות</string>
+
+    <string-array name="source_text">
+        <item>אוטומטי (ברירת מחדל)</item>
+        <item>קו קול</item>
+        <item>מיקרופון</item>
+        <item>ברירת מחדל מערכת</item>
+        <item>VoIP</item>
+        <item>זיהוי קולי</item>
+        <item>מצלמת וידיאו</item>
+        <item>מערכת RAW</item>
+    </string-array>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44.1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz (ברירת מחדל)</item>
+        <item>11 kHz</item>
+        <item>8 kHz (טלפון)</item>
+    </string-array>
+
+    <string-array name="delete_text">
+        <item>שמור כל ההקלטות</item>
+        <item>יותר מיום אחד</item>
+        <item>יותר משבוע</item>
+        <item>יותר מחודש</item>
+        <item>יותר משלושה חודשים</item>
+        <item>יותר מששה חודשים</item>
+    </string-array>
+
+    <string-array name="format_text">
+        <item>2017-02-01 09.08.01.wav</item>
+        <item>20170201T090801.wav</item>
+        <item>1512340435 [טלפון].wav</item>
+        <item>2017-02-01 09.08.01 ↓↑ [מספר מחייג].wav</item>
+    </string-array>
+
+    <string-array name="themes_text">
+        <item>ערכת עיצוב בהירה</item>
+        <item>ערכת עיצוב כהה</item>
+    </string-array>
+
+    <string-array name="channels_text">
+        <item>מונו (ברירת מחדל)</item>
+        <item>סטריאו</item>
+    </string-array>
+
+    <string name="action_settings">הגדרות</string>
+    <string name="call_recording">הקלטת שיחה</string>
+    <string name="no_folder_app">לא מותקן יישום תצוגת תיקיות</string>
+    <string name="hold_by_call">השהה (החזקה על ידי שיחה)</string>
+    <string name="encoding">קידוד</string>
+    <string name="pause">השהה</string>
+    <string name="edit">ערוך</string>
+    <string name="recording">הקלטה</string>
+    <string name="encoding_title">קידוד...</string>
+    <string name="recording_title">הקלטה</string>
+    <string name="title_header">%1$s פנוי ~ %2$s נשאר</string>
+    <string name="open_recording_folder">פתח תיקיית הקלטות</string>
+    <string name="recording_list_is_empty">רשימת הקלטות ריקה\n\nבדוק \'הקלטת שיחה\' בכדי להתחיל להקליט שיחות</string>
+
+    <string name="source_default">(ברירת מחדל)</string>
+    <string name="source_mic">(מיקרופון)</string>
+    <string name="source_line">(קו קול)</string>
+
+    <string name="call_recordings_support">תמיכה בהקלטת שיחה</string>
+    <string name="call_recordings_support_text">רוב הטלפונים אינם תומכים בהקלטת שיחות, כדי לאפשר את הקלטת השיחות להתקין קושחה בקוד פתוח. אפשרויות קידוד שונות (ogg, MediaRecorder), מקורות שונים (קו טלפון, מיקרופון, VoIP). או ROOT לטלפון שלך.</string>
+    <string name="recordings_quality">איכות הקלטה</string>
+    <string name="recordings_quality_text">אם הטלפון נכשל לתמוך באיכות גבוהה של הקלטת שיחה, היישום ינסה להקליט באמצעות מיקרופון (תוכל לשמוע רק צד אחד: שלך או את המשוחח).</string>
+    <string name="task_managers">מנהלי המשימות</string>
+    <string name="task_managers_text">אם לטלפון שלך יש אופטימיזציה של הסוללה או מנהלי המשימות, שקול להשבית אותם, כדי לשמור על היישום פועל ברקע (אופציונלי)</string>
+
+    <string name="recording_enabled">הקלטה מופעלת</string>
+    <string name="recording_disabled">הקלטה מופסקת</string>
+    <string name="callrecent_auto_save">נשמר אוטומטית ב(%1$d)</string>
+    <string name="calls_out">יוצר</string>
+    <string name="calls_in">נכנס</string>
+    <string name="save_button">שמור</string>
+    <string name="mixer_paths_done">מערכת העירבול הוגדרה, אנא אתחל את הטלפון!</string>
+    <string name="mixer_paths_failed">לא ניתן להגדיר את מערכת העירבול</string>
+
+    <string name="pref_storage_title">נתיב אחסון</string>
+    <string name="pref_rate_title">קצב דגימה</string>
+    <string name="pref_encoding_title">הצפנה</string>
+    <string name="pref_encoding_summary">פלט פורמטים של קבצים (.wav, .m4a, ...)</string>
+    <string name="pref_mode_title">מצב</string>
+    <string name="pref_mode_summary">ערוצי הקלטה</string>
+    <string name="pref_delete_title">מחק הקלטות</string>
+    <string name="pref_nameformat_title">פורמט שם</string>
+    <string name="pref_calldialog_title">דו שיח שיחות אחרונות</string>
+    <string name="pref_calldialog_summary">הצג תיבת דו שיח לשינוי שם / העדפה לאחר סיום השיחה</string>
+    <string name="pref_optimization_title">השבת אופטימיזציה של הסוללה</string>
+    <string name="pref_optimization_summary">מנע את הסרת היישום מהזיכרון</string>
+    <string name="pref_theme_title">ערכת נושא של יישומים</string>
+    <string name="pref_theme_summary">הגדרת ערכת נושא של יישום (כהה / בהיר)</string>
+    <string name="pref_mixerpaths_title">מערכת עירבול הקלטת שיחות</string>
+    <string name="pref_mixerpaths_summary">אפשר למערכת העירבול לרשום שיחות לאפליקציות רגילות</string>
+    <string name="pref_recordings">הקלטות</string>
+    <string name="pref_advanced">מתקדם</string>
+    <string name="pref_application">יישומים</string>
+    <string name="menu_search">חיפוש</string>
+    <string name="send_survey">שלח סקר</string>
+    <string name="survey_know_issues">Know Issues:</string>
+    <string name="survey_none">No survery\'s</string>
+    <string name="survey_bad">Not working</string>
+    <string name="survey_good">Working</string>
+    <string name="survey_few_issues">Few issues</string>
+    <string name="survey_view">View Survey\'s</string>
+    <string name="survey_status">Status:</string>
+    <string name="sort_by_contact_z_a">Contact Z-A</string>
+    <string name="sort_by_contact_a_z">Contact A-Z</string>
+</resources>

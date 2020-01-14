@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CallRecoding.iml" filepath="$PROJECT_DIR$/CallRecoding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-audio-library/android-audio-library.iml" filepath="$PROJECT_DIR$/android-audio-library/android-audio-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-library/android-library.iml" filepath="$PROJECT_DIR$/android-library/android-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-vorbis/android-vorbis.iml" filepath="$PROJECT_DIR$/android-vorbis/android-vorbis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jebml/jebml.iml" filepath="$PROJECT_DIR$/jebml/jebml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-vorbis/libogg/libogg.iml" filepath="$PROJECT_DIR$/android-vorbis/libogg/libogg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-vorbis/libvorbis/libvorbis.iml" filepath="$PROJECT_DIR$/android-vorbis/libvorbis/libvorbis.iml" />
+    </modules>
+  </component>
+</project>

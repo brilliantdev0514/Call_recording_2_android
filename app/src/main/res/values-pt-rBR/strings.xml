@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Call Recorder</string>
+
+    <string-array name="source_text">
+        <item>Auto (padrão)</item>
+        <item>Linha de voz</item>
+        <item>Mic</item>
+        <item>Padrão do sistema</item>
+        <item>VoIP</item>
+        <item>Reconhecimento de voz</item>
+        <item>Filmadora</item>
+        <item>RAW de sistema</item>
+    </string-array>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44.1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz (padrão)</item>
+        <item>11 kHz</item>
+        <item>8 kHz (telefone)</item>
+    </string-array>
+
+    <string-array name="delete_text">
+        <item>Manter todas as gravações</item>
+        <item>após 1 dia</item>
+        <item>após 1 semana</item>
+        <item>após 1 mês</item>
+        <item>após 3 meses</item>
+        <item>após 6 meses</item>
+    </string-array>
+
+    <string-array name="format_text">
+        <item>2017-02-01 09.08.01.wav</item>
+        <item>20170201T090801.wav</item>
+        <item>1512340435 [Telefone].wav</item>
+        <item>2017-02-01 09.08.01 ↓↑ [ID de chamada].wav</item>
+    </string-array>
+
+    <string-array name="themes_text">
+        <item>Tema claro</item>
+        <item>Tema escuro</item>
+    </string-array>
+
+    <string-array name="channels_text">
+        <item>Mono (padrão)</item>
+        <item>Stereo</item>
+    </string-array>
+
+    <string name="action_settings">Configurações</string>
+    <string name="call_recording">Gravação de chamadas</string>
+    <string name="no_folder_app">Nenhum aplicativo para visualizar pastas instalado</string>
+    <string name="hold_by_call">pausa (colocado em espera pela chamada)</string>
+    <string name="encoding">codificação</string>
+    <string name="pause">pause</string>
+    <string name="edit">editar</string>
+    <string name="recording">gravação</string>
+    <string name="encoding_title">Codificação...</string>
+    <string name="recording_title">Gravação</string>
+    <string name="title_header">%1$s livre ~ %2$s restando</string>
+    <string name="open_recording_folder">Abrir a pasta de gravações</string>
+    <string name="recording_list_is_empty">Lista de gravação etá vazia\n\nConfira \'Gravação de chamadas\' para começar a gravar chamadas</string>
+
+    <string name="source_default">(Padrão)</string>
+    <string name="source_mic">(Mic)</string>
+    <string name="source_line">(Linha de voz)</string>
+
+    <string name="call_recordings_support">Suporte a gravação de chamadas</string>
+    <string name="call_recordings_support_text">A maioria dos telefones não possui suporte a gravação de chamadas de alta qualidade (linha telefônica). Para ativar a gravação de chamadas, instale um firmware de código aberto, escolha diferentes opções de codificação (ogg, MediaRecorder…), diferentes fontes de áudio (linha telefônica, microfone, VoIP ...) ou faça root no seu telefone.</string>
+    <string name="recordings_quality">Qualidade das gravações</string>
+    <string name="recordings_quality_text">Se o seu telefone não tiver suporte a gravação de chamadas de alta qualidade, o aplicativo tentará a gravação de chamadas MIC (você pode ouvir apenas um lado: seu ou seu interlocutor).</string>
+    <string name="task_managers">Gerenciadores de tarefa</string>
+    <string name="task_managers_text">Se o seu telefone tiver a otimização da bateria ou os gerenciadores de tarefas ativados, considere desativá-los para manter o aplicativo em execução em segundo plano (opcional)</string>
+
+    <string name="recording_enabled">Gravação ativada</string>
+    <string name="recording_disabled">Gravação desativada</string>
+    <string name="callrecent_auto_save">Salvar automaticamente recebidas (%1$d)</string>
+    <string name="calls_out">Efetuadas</string>
+    <string name="calls_in">Recebidas</string>
+    <string name="save_button">Salvar</string>
+    <string name="mixer_paths_done">Mixador do sistema configurado. Por favor, reinicie!</string>
+    <string name="mixer_paths_failed">Não foi possível configurar o mixador do sistema</string>
+
+    <string name="pref_storage_title">Caminho de armazenamento</string>
+    <string name="pref_rate_title">Taxa de amostra</string>
+    <string name="pref_encoding_title">Codificação</string>
+    <string name="pref_encoding_summary">Formatos de arquivo de saída (.wav, .m4a, ...)</string>
+    <string name="pref_mode_title">Modo</string>
+    <string name="pref_mode_summary">Canais de gravação</string>
+    <string name="pref_delete_title">Excluir gravações</string>
+    <string name="pref_nameformat_title">Formato de nome</string>
+    <string name="pref_calldialog_title">Diálogo de chamadas recentes</string>
+    <string name="pref_calldialog_summary">Mostrar diálogo de renomear / favoritar após o término da chamada</string>
+    <string name="pref_optimization_title">Desabilitar otimizador de bateria</string>
+    <string name="pref_optimization_summary">Evite do aplicativo ser removido da memória</string>
+    <string name="pref_theme_title">Tema do aplicativo</string>
+    <string name="pref_theme_summary">Defina o tema do aplicativo (escuro / claro)</string>
+    <string name="pref_mixerpaths_title">Gravação de chamada recebida pelo mixador do sistema</string>
+    <string name="pref_mixerpaths_summary">Permita que o mixador do sistema grave chamadas para aplicativos comuns</string>
+    <string name="pref_recordings">Gravações</string>
+    <string name="pref_advanced">Avançado</string>
+    <string name="pref_application">Aplicativo</string>
+    <string name="menu_search">Pesquisar</string>
+    <string name="send_survey">Enviar pesquisa</string>
+    <string name="survey_know_issues">Problemas conhecidos:</string>
+    <string name="survey_none">Nenhuma pesquisa</string>
+    <string name="survey_bad">Não está funcionando</string>
+    <string name="survey_good">Funcionando</string>
+    <string name="survey_few_issues">Alguns problemas</string>
+    <string name="survey_view">Ver pesquisa</string>
+    <string name="survey_status">Status:</string>
+    <string name="sort_by_contact_z_a">Contato Z-A</string>
+    <string name="sort_by_contact_a_z">Contato A-Z</string>
+</resources>

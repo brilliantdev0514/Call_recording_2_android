@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Call Recorder</string>
+
+    <string-array name="source_text">
+        <item>Automatisch (voreingestellt)</item>
+        <item>Voice Line</item>
+        <item>Mic</item>
+        <item>System-Voreinstellung</item>
+        <item>VoIP</item>
+        <item>Voice Recognition</item>
+        <item>Camcoder</item>
+        <item>System RAW</item>
+    </string-array>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44.1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz (voreingestellt)</item>
+        <item>11 kHz</item>
+        <item>8 kHz (Telefon)</item>
+    </string-array>
+
+    <string-array name="delete_text">
+        <item>Alle Aufzeichnungen behalten</item>
+        <item>älter als 1 Tag</item>
+        <item>älter als 1 Woche</item>
+        <item>älter als 1 Monat</item>
+        <item>älter als 3 Monate</item>
+        <item>älter als 6 Monate</item>
+    </string-array>
+
+    <string-array name="format_text">
+        <item>2017-02-01 09.08.01.wav</item>
+        <item>20170201T090801.wav</item>
+        <item>1512340435 [Phone].wav</item>
+        <item>2017-02-01 09.08.01 ↓↑ [Caller ID].wav</item>
+    </string-array>
+
+    <string-array name="themes_text">
+        <item>Helles Design</item>
+        <item>Dunkles Design</item>
+    </string-array>
+
+    <string-array name="channels_text">
+        <item>Mono (voreingestellt)</item>
+        <item>Stereo</item>
+    </string-array>
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="call_recording">Anrufaufzeichnung</string>
+    <string name="no_folder_app">Keine Anwendung zur Ordneransicht installiert</string>
+    <string name="hold_by_call">Pause (hold by call)</string>
+    <string name="encoding">Kodierung</string>
+    <string name="pause">Pause</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="recording">Aufzeichnung</string>
+    <string name="encoding_title">Kodierung …</string>
+    <string name="recording_title">Aufzeichnung</string>
+    <string name="title_header">%1$s frei ~ %2$s verbleibend</string>
+    <string name="open_recording_folder">Aufzeichnugsordner öffnen</string>
+    <string name="recording_list_is_empty">Aufzeichnugsliste ist leer\n\n \'Anrufaufzeichnung\' auswählen, um Anrufaufzeichnung zu starten</string>
+
+    <string name="source_default">(voreingestellt)</string>
+    <string name="source_mic">(Mic)</string>
+    <string name="source_line">(Voice Line)</string>
+
+    <string name="call_recordings_support">Call Recordings-Support</string>
+    <string name="call_recordings_support_text">Die meisten Smartphones unterstützen keine Anrufaufzeichnugen, um Anrufaufzeichnung zu aktivieren, bitte Open-Source-Firmware installieren. Verschiedene Kodierungsoptionen (ogg,  MediaRecorder), verschiedene Quellen (phone line, mic, VoIP) auswählen. Oder Smartphone rooten.</string>
+    <string name="recordings_quality">Anrufaufzeichnungs-Qualität</string>
+    <string name="recordings_quality_text">Wenn das Smartphone keine hochwertige Anrufaufzeichnung unterstützt, wird die Anwendung die Mikrofonaufzeichnung versuchen (möglicherweise ist nur eine Seite zu hören: Ihre oder die Ihres Gesprächpartners).</string>
+    <string name="task_managers">Task-Manager</string>
+    <string name="task_managers_text">Wenn das Smartphone über eine Batterieoptimierung oder Task-Manager verfügt, versuchen Sie diese zu deaktivieren, um die Anwendung im Hintergrund laufen zu lassen (optional)</string>
+
+    <string name="recording_enabled">Aufzeichnung aktiviert</string>
+    <string name="recording_disabled">Aufzeichnung deaktiviert</string>
+    <string name="callrecent_auto_save">Automatisch in (%1$d) speichern</string>
+    <string name="calls_out">Ausgehend</string>
+    <string name="calls_in">Eingehend</string>
+    <string name="save_button">Speichern</string>
+    <string name="mixer_paths_done">Systemmixer konfiguriert, bitte neu starten!</string>
+    <string name="mixer_paths_failed">Systemmixer kann nicht konfiguriert werden</string>
+
+    <string name="pref_storage_title">Speicherpfad</string>
+    <string name="pref_rate_title">Sample-Rate</string>
+    <string name="pref_encoding_title">Kodierung</string>
+    <string name="pref_encoding_summary">Ausgabe-Dateiformate (.wav, .m4a, …)</string>
+    <string name="pref_mode_title">Modus</string>
+    <string name="pref_mode_summary">Aufzeichnungskanäle</string>
+    <string name="pref_delete_title">Aufzeichnugen löschen</string>
+    <string name="pref_nameformat_title">Namensformat</string>
+    <string name="pref_calldialog_title">Dialogfeld Letzter Anruf</string>
+    <string name="pref_calldialog_summary">Dialogfeld nach Gesprächsende anzeigen, um Aufzeichnung umzubenennen / makieren</string>
+    <string name="pref_optimization_title">Batterieoptimierung deaktivieren</string>
+    <string name="pref_optimization_summary">Verhindern, dass App aus Speicher entfernt wird</string>
+    <string name="pref_theme_title">Anwendungsdesign (Theme)</string>
+    <string name="pref_theme_summary">Anwendungsdesign einstellen (dunkel / hell)</string>
+    <string name="pref_mixerpaths_title">Systemmixer Incall-Aufzeichung</string>
+    <string name="pref_mixerpaths_summary">Systemmixer erlauben, Anrufe für reguläre Anwendungen aufzuzeichnen</string>
+    <string name="pref_recordings">Aufzeichnungen</string>
+    <string name="pref_advanced">Erweitert</string>
+    <string name="pref_application">Application</string>
+    <string name="menu_search">Suchen</string>
+    <string name="send_survey">Umfrage senden</string>
+    <string name="survey_know_issues">Know Issues:</string>
+    <string name="survey_none">No survery\'s</string>
+    <string name="survey_bad">Not working</string>
+    <string name="survey_good">Working</string>
+    <string name="survey_few_issues">Few issues</string>
+    <string name="survey_view">View Survey\'s</string>
+    <string name="survey_status">Status:</string>
+    <string name="sort_by_contact_z_a">Contact Z-A</string>
+    <string name="sort_by_contact_a_z">Contact A-Z</string>
+</resources>
+

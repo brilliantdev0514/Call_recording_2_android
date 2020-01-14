@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Call Recorder</string>
+
+    <string-array name="source_text">
+        <item>Auto (standard)</item>
+        <item>Stemmelinje</item>
+        <item>Mikrofon</item>
+        <item>Systemets standard</item>
+        <item>VoIP</item>
+        <item>Stemmegjenkjennelse</item>
+        <item>Kameraopptaker</item>
+        <item>System-råfil</item>
+    </string-array>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44,1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz (standard)</item>
+        <item>11 kHz</item>
+        <item>8 kHz (gammel telefon)</item>
+    </string-array>
+
+    <string-array name="delete_text">
+        <item>Behold alle opptakene</item>
+        <item>eldre enn en dag</item>
+        <item>eldre enn en uke</item>
+        <item>eldre enn 1 måned</item>
+        <item>eldre enn 3 måneder</item>
+        <item>eldre enn 6 måneder</item>
+    </string-array>
+
+    <string-array name="format_text">
+        <item>2017-02-01 09.08.01.wav</item>
+        <item>20170201T090801.wav</item>
+        <item>1512340435 [Telefon].wav</item>
+        <item>2017-02-01 09.08.01 ↓↑ [IDen til ringeren].wav</item>
+    </string-array>
+
+    <string-array name="themes_text">
+        <item>Hvitt tema</item>
+        <item>Mørkt tema</item>
+    </string-array>
+
+    <string-array name="channels_text">
+        <item>Mono (standard)</item>
+        <item>Stereo</item>
+    </string-array>
+
+    <string name="action_settings">Innstillinger</string>
+    <string name="call_recording">Samtaleopptak</string>
+    <string name="no_folder_app">Ingen mappevisningsapper er installert</string>
+    <string name="hold_by_call">pause («Hold linjen»-samtale)</string>
+    <string name="encoding">koding</string>
+    <string name="pause">pause</string>
+    <string name="edit">rediger</string>
+    <string name="recording">tar opp</string>
+    <string name="encoding_title">Koder ...</string>
+    <string name="recording_title">Tar opp</string>
+    <string name="title_header">%1$s er ledig ~ %2$s igjen</string>
+    <string name="open_recording_folder">Åpne opptaksmappen</string>
+    <string name="recording_list_is_empty">Opptakslisten er tom\n\nHuk av \'Samtaleopptak\' for å begynne å ta opp samtaler</string>
+
+    <string name="source_default">(Standard)</string>
+    <string name="source_mic">(Mikrofon)</string>
+    <string name="source_line">(Stemmelinje)</string>
+
+    <string name="call_recordings_support">Støtte for samtaleopptak</string>
+    <string name="call_recordings_support_text">De fleste telefoner støtter ikke høykvalitets samtaleopptak gjennom telefonlinjen. For å aktivere samtaleopptak, installer åpenkildet programvare, velg forskjellige kodingsalternativer (ogg, MediaRecorder…), forskjellige lydkilder (telefonlinje, mikrofon, VoIP…), or root your phone..</string>.
+    <string name="recordings_quality">Opptakenes kvalitet</string>
+    <string name="recordings_quality_text">Dersom telefonen din ikke støtter høykvalitets samtaleopptak, vil appen prøve med MIKROFON-samtaleopptak (Du kan bare høre én av sidene: Din eller til den du prater med).</string>
+    <string name="task_managers">Oppgavebehandlere</string>
+    <string name="task_managers_text">Dersom telefonen din har batterioptimalisering eller oppgavebehandlere skrudd på, tenk over å skru dem av for å holde denne appen kjørende i bakgrunnen. (Valgfritt)</string>
+
+    <string name="recording_enabled">Opptaking er skrudd på</string>
+    <string name="recording_disabled">Opptaking av skrudd av</string>
+    <string name="callrecent_auto_save">Auto-lagre til(%1$d)</string>
+    <string name="calls_out">Ut</string>
+    <string name="calls_in">Inn</string>
+    <string name="save_button">Lagre</string>
+    <string name="mixer_paths_done">Systemmikseren er satt opp. Vennligst start systemet på nytt!</string>
+    <string name="mixer_paths_failed">Klarte ikke å sette opp systemmikseren</string>
+
+    <string name="pref_storage_title">Lagringsfilbane</string>
+    <string name="pref_rate_title">Samplingsfrekvens</string>
+    <string name="pref_encoding_title">Koding</string>
+    <string name="pref_encoding_summary">Utdatafilformater (.wav, .m4a, ...)</string>
+    <string name="pref_mode_title">Modus</string>
+    <string name="pref_mode_summary">Opptakskanaler</string>
+    <string name="pref_delete_title">Slett opptak</string>
+    <string name="pref_nameformat_title">Navneformat</string>
+    <string name="pref_calldialog_title">Spørrevindu for nylige samtaler</string>
+    <string name="pref_calldialog_summary">Vis omnavngivings- / favoritt-spørrevinduet etter at en samtale ble gjort ferdig</string>
+    <string name="pref_optimization_title">Skru av batterioptimalisering</string>
+    <string name="pref_optimization_summary">Hindre appen fra å bli fjernet fra minnet</string>
+    <string name="pref_theme_title">App-tema</string>
+    <string name="pref_theme_summary">Velg appens tema (mørkt / hvitt)</string>
+    <string name="pref_mixerpaths_title">Opptak inni samtalene med systemmikseren</string>
+    <string name="pref_mixerpaths_summary">Tillat systemmikseren å ta opp samtaler i vanlige apper</string>
+    <string name="pref_recordings">Opptak</string>
+    <string name="pref_advanced">Avansert</string>
+    <string name="pref_application">App</string>
+    <string name="menu_search">Søk</string>
+    <string name="send_survey">Send inn undersøkelse</string>
+    <string name="survey_know_issues">Kjente problemer:</string>
+    <string name="survey_none">Ingen undersøkelser</string>
+    <string name="survey_bad">Virker ikke</string>
+    <string name="survey_good">Virker</string>
+    <string name="survey_few_issues">Noen få problemer</string>
+    <string name="survey_view">Vis undersøkelsene</string>
+    <string name="survey_status">Status:</string>
+    <string name="sort_by_contact_z_a">Contact Z-A</string>
+    <string name="sort_by_contact_a_z">Contact A-Z</string>
+</resources>

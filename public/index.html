@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="spin.css">
+<script src="spin.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+  var url = new URL(window.location.href);
+  
+  var devicesMap = new Map();
+  
+  const INDEX_QUALITY = 1; // B
+  const INDEX_MANUFACTURER = 2; // C
+  const INDEX_DEVICE = 3; // D
+
+  var m = url.searchParams.get("m");
+  var d = url.searchParams.get("d");
+
+  var spreadsheetUrl='https://m.docs.google.com/spreadsheets/d/1C6HuLIk3k4SmAYEuKOnQynGEPM39rjlu90oX7bYbqLk/gviz/tq?gid=1685986704';
+  var spreadsheetQuery='&tqx=out:html&tq=';
+  var spreadsheetSelect='SELECT *';
+
+  function loadDevices() {
+    var select = $('#select-m');
+    devicesMap.forEach(function(v, k, m) {
+      var opt = `<option value="${k}">${k}</option>`;            
+      select.append(opt);
+    });
+    if (select.get(0).changeOld)
+      select.unbind('change', select.get(0).changeOld);
+    select.val('');
+    select.selectmenu('refresh', true);
+    select.change(select.get(0).changeOld = function() {
+      loadDevice($(this).val());
+    })
+  }
+  
+  function loadDevice(k) {
+    var select = $('#select-d');
+    select.empty();
+    var m = devicesMap.get(k);
+    m.forEach(function(v, m) {
+      var opt = `<option value="${v}">${v}</option>`;
+      select.append(opt);
+    });
+    if (select.get(0).changeOld)
+      select.unbind('change', select.get(0).changeOld);
+    select.val('');
+    select.selectmenu('refresh', true);
+    select.change(select.get(0).changeOld = function() {
+      loadChart(k, $(this).val());
+    })
+    return m;
+  }
+  
+  function loadChart(m, d) {
+    m = m.toUpperCase().trim();
+    d = d.toUpperCase().trim();
+    var sql = `${spreadsheetSelect} WHERE UPPER(C) LIKE '%${m}%' and UPPER(D) LIKE '%${d}%'`;
+    var url = `${spreadsheetUrl}${spreadsheetQuery}${encodeURI(sql)}`;
+    var query = new google.visualization.Query(spreadsheetUrl);
+    query.setQuery(sql);
+    query.send(function(response) {
+      var data = response.getDataTable();
+      var group = google.visualization.data.group(data, [INDEX_QUALITY], [{
+           column: INDEX_QUALITY,
+           aggregation: google.visualization.data.count,
+           type: 'number'
+       }]);
+      var html = `<h3 class="ui-bar ui-bar-a">Selected Device</h3>
+      <p>Manufacturer: "${m}"<br/> Model: "${d}"</p>
+      <div id="piechart" style="width: 100%; height: 400px; max-width: 600px;"></div>
+      <a target="_blank" href="${url}">See raw data</a>`;
+      var e = document.getElementById('result');
+      e.innerHTML = html;
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(group, {title: 'Quality', chartArea: {height: '95%', width: '95%'}});
+    });
+    new Spinner().spin(document.getElementById('result'));
+  }
+
+  function drawChart() {
+    var url = `${spreadsheetUrl}${spreadsheetQuery}${encodeURI(spreadsheetSelect)}`;
+
+    $('#all').attr("href", url);
+
+    var query = new google.visualization.Query(spreadsheetUrl);
+    query.setQuery(spreadsheetSelect);
+    query.send(function(response) {
+      var html = `<form>
+      <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>Select your device:</legend>
+          <label for="select-m">Manufacturer</label>
+          <select name="select-m" id="select-m">
+          </select>
+          <label for="select-d">Device</label>
+          <select name="select-d" id="select-d">
+          </select>
+      </fieldset>
+      </form>`
+      $("#wait").html(html).trigger('create');
+
+      var data = response.getDataTable();
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([INDEX_MANUFACTURER,INDEX_DEVICE]);
+
+      for (var i = 0; i < view.getNumberOfRows(); i++) {
+        var k = view.getValue(i, 0).toUpperCase().trim();
+        var v = view.getValue(i, 1).toUpperCase().trim();
+        var devices = devicesMap.get(k);
+        if (!devices) {
+          devices = new Set()
+          devicesMap.set(k, devices);
+        }
+        devices.add(v);
+      }
+
+      loadDevices();
+      
+      if( m != null && d != null) {
+        m = m.toUpperCase().trim();
+        d = d.toUpperCase().trim();
+
+        for (var e of devicesMap.keys()) {
+          if (e.indexOf(m) >= 0) {
+            m = e;
+          }
+        }
+
+        var select = $('#select-m');
+        select.val(m);
+        select.selectmenu('refresh', true);
+        devices = loadDevice(m);
+
+        for (var e of devices.keys()) {
+          if (e.indexOf(d) >= 0) {
+            d = e;
+          }
+        }
+
+        var select = $('#select-d');
+        select.val(d);
+        select.selectmenu('refresh', true);
+
+        loadChart(m, d);
+      }
+    });
+  }
+
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  $(document).ready(function() {
+    new Spinner().spin(document.getElementById('wait'));
+  });
+</script>
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h3>Call Recorder</h3>
+    </div>
+    <div class="ui-body" data-role="main">
+      <p>Call Recorder simple UI. Open gitlab.com <a href="https://gitlab.com/axet/android-call-recorder">page</a>. See all user survey's <a target="_blank" id="all" href="">here.</a></p>
+      <h3 class="ui-bar ui-bar-a">User Survey's</h1>
+      <div id="wait"></div>
+      <div id="result"></div>
+      <h3 class="ui-bar ui-bar-a">Manual install</h1>
+      <pre>gradle installDebug</pre>
+      <h3 class="ui-bar ui-bar-a">Translate</h1>
+      <p>If you want to translate 'Call Recorder' to your language please read following:</p>
+      <ul data-role="listview">
+        <a href="https://gitlab.com/axet/android-call-recorder/blob/master/docs/HOWTO-Translate.md">HOWTO-Translate.md</a>
+      </ul>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

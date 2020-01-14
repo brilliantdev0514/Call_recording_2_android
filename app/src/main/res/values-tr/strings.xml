@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Çağrı Kaydedici</string>
+
+    <string-array name="source_text">
+        <item>Kendiliğinden (öntanımlı)</item>
+        <item>Ses Hattı</item>
+        <item>Mikrofon</item>
+        <item>Sistem Öntanımlısı</item>
+        <item>VoIP</item>
+        <item>Voice Recognition</item>
+        <item>Camcoder</item>
+        <item>Sistem RAW\'ı</item>
+    </string-array>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44.1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz (öntanımlı)</item>
+        <item>11 kHz</item>
+        <item>8 kHz (telefon)</item>
+    </string-array>
+
+    <string-array name="delete_text">
+        <item>Tüm kayıtları tut</item>
+        <item>bir günden eskileri</item>
+        <item>bir haftadan eskileri</item>
+        <item>1 aydan eskileri</item>
+        <item>3 aydan eskileri</item>
+        <item>6 aydan eskileri</item>
+    </string-array>
+
+    <string-array name="format_text">
+        <item>2017-02-01 09.08.01.wav</item>
+        <item>20170201T090801.wav</item>
+        <item>1512340435 [Telefon].wav</item>
+        <item>2017-02-01 09.08.01 ↓↑ [Arayan Kimliği].wav</item>
+    </string-array>
+
+    <string-array name="themes_text">
+        <item>Beyaz Gövde</item>
+        <item>Kara Gövde</item>
+    </string-array>
+
+    <string-array name="channels_text">
+        <item>Mono (öntanımlı)</item>
+        <item>Stereo</item>
+    </string-array>
+
+    <string name="action_settings">Ayarlar</string>
+    <string name="call_recording">Çağrılar Kaydediliyor</string>
+    <string name="no_folder_app">Yüklü klasör görünümü uygulaması yok</string>
+    <string name="hold_by_call">pause (hold by call)</string>
+    <string name="encoding">kodlanıyor</string>
+    <string name="pause">duraklat</string>
+    <string name="edit">düzenle</string>
+    <string name="recording">kaydediliyor</string>
+    <string name="encoding_title">Kodlanıyor...</string>
+    <string name="recording_title">Kaydediliyor</string>
+    <string name="title_header">%1$s boş ~ %2$s kaldı</string>
+    <string name="open_recording_folder">Kayıt Klasörünü Aç</string>
+    <string name="recording_list_is_empty">Kayıt Listesi Boş\n\nÇağrıları Kaydetmeye Başlamak İçin \'Çağrılıyor Kaydediliyor\'u Gözden Geçirin</string>
+
+    <string name="source_default">(Öntanımlı)</string>
+    <string name="source_mic">(Mikrofon)</string>
+    <string name="source_line">(Ses Hattı)</string>
+
+    <string name="call_recordings_support">Çağrı Kayıtları desteği</string>
+    <string name="call_recordings_support_text">Çoğu telefon çağrı kaydetmeyi desteklemez, Çağrı Kaydetmeyi etkinleştirmek için açık kaynaklı donanım yazılımı yükleyin. Başka kodlama seçeneklerini (ogg, MediaRecorder), başka kaynakları (telefon hattı, mikrofon, VoIP) deneyin. Veya telefonunuzda KÖK iznine sahip olun.</string>
+    <string name="recordings_quality">Kayıt Niteliği</string>
+    <string name="recordings_quality_text">Eğer telefonunuz yüksek nitelikli çağrı kaydında başarısız olursa, uygulama çağrı kaydını mikrofondan yapmayı deneyecektir (yalnızca tek tarafı duyabilirsiniz: kendinizi veya karşınızdakini).</string>
+    <string name="task_managers">Görev Yöneticileri</string>
+    <string name="task_managers_text">Eğer telefonunuzun Pil İyileştirme veya Görev Yöneticileri varsa, uygulamanın arka planda çalışmasına devam etmesi için onları kapatmayı düşünün (isteğe bağlı).</string>
+
+    <string name="recording_enabled">Kaydetme etkinleştirildi</string>
+    <string name="recording_disabled">Kaydetme devre dışı bırakıldı</string>
+    <string name="callrecent_auto_save">(%1$d) içinde kendiliğinden kaydet</string>
+    <string name="calls_out">Giden</string>
+    <string name="calls_in">Gelen</string>
+    <string name="save_button">Kaydet</string>
+    <string name="mixer_paths_done">Sistem karıştırısı yapılandırıldı, lütfen yeniden başlatın!</string>
+    <string name="mixer_paths_failed">Sistem karıştırıcısı yapılandırılamıyor</string>
+
+    <string name="pref_storage_title">Depolama Yolu</string>
+    <string name="pref_rate_title">Örnek Oranı</string>
+    <string name="pref_encoding_title">Kodlama</string>
+    <string name="pref_encoding_summary">Çıktı dosyası biçimleri (.wav, .m4a, ...)</string>
+    <string name="pref_mode_title">Kip</string>
+    <string name="pref_mode_summary">Kaydedilen kanallar</string>
+    <string name="pref_delete_title">Kayıtları Sil</string>
+    <string name="pref_nameformat_title">Ad Biçimi</string>
+    <string name="pref_calldialog_title">Son Çağrı Kutusu</string>
+    <string name="pref_calldialog_summary">Çağrı bitince yeniden adlandırma / gözdelere ekleme kutusunu göster</string>
+    <string name="pref_optimization_title">Pil İyileştirmesini Devre Dışı Bırak</string>
+    <string name="pref_optimization_summary">Uygulamanın bellekten kaldırılmasını önle</string>
+    <string name="pref_theme_title">Uygulama Gövdesi</string>
+    <string name="pref_theme_summary">Uygulama gövdesini belirle (karanlık / aydınlık)</string>
+    <string name="pref_mixerpaths_title">Sistem Karıştırıcısı Gelen Çağrı Kaydı</string>
+    <string name="pref_mixerpaths_summary">Sistem karıştırıcısının sıradan uygulamalar için çağrı kaydı yapmasına izin ver</string>
+    <string name="pref_recordings">Kayıtlar</string>
+    <string name="pref_advanced">Gelişmiş</string>
+    <string name="pref_application">Uygulama</string>
+    <string name="menu_search">Search</string>
+    <string name="send_survey">Send Survey</string>
+    <string name="survey_know_issues">Know Issues:</string>
+    <string name="survey_none">No survery\'s</string>
+    <string name="survey_bad">Not working</string>
+    <string name="survey_good">Working</string>
+    <string name="survey_few_issues">Few issues</string>
+    <string name="survey_view">View Survey\'s</string>
+    <string name="survey_status">Status:</string>
+    <string name="sort_by_contact_z_a">Contact Z-A</string>
+    <string name="sort_by_contact_a_z">Contact A-Z</string>
+</resources>

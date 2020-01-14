@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Call Recorder</string>
+
+    <string-array name="source_text">
+        <item>自動（預設）</item>
+        <item>Voice Line</item>
+        <item>麥克風</item>
+        <item>系統預設值</item>
+        <item>VoIP</item>
+        <item>Voice Recognition</item>
+        <item>Camcoder</item>
+        <item>System RAW</item>
+    </string-array>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44.1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz（預設）</item>
+        <item>11 kHz</item>
+        <item>8 kHz（電話）</item>
+    </string-array>
+
+    <string-array name="delete_text">
+        <item>保留所有錄音</item>
+        <item>一天前</item>
+        <item>一個禮拜前</item>
+        <item>一個月前</item>
+        <item>三個月前</item>
+        <item>六個月前</item>
+    </string-array>
+
+    <string-array name="format_text">
+        <item>2017-02-01 09.08.01.wav</item>
+        <item>20170201T090801.wav</item>
+        <item>1512340435 [Phone].wav</item>
+        <item>2017-02-01 09.08.01 ↓↑ [Caller ID].wav</item>
+    </string-array>
+
+    <string-array name="themes_text">
+        <item>亮色佈景主題</item>
+        <item>暗色佈景主題</item>
+    </string-array>
+
+    <string-array name="channels_text">
+        <item>單聲道（預設）</item>
+        <item>立體聲</item>
+    </string-array>
+
+    <string name="action_settings">設定</string>
+    <string name="call_recording">通話錄音</string>
+    <string name="no_folder_app">資料夾檢視應用程式未安裝</string>
+    <string name="hold_by_call">暫停（通話中）</string>
+    <string name="encoding">編碼</string>
+    <string name="pause">暫停</string>
+    <string name="edit">編輯</string>
+    <string name="recording">錄音</string>
+    <string name="encoding_title">正在編碼...</string>
+    <string name="recording_title">錄音</string>
+    <string name="title_header">%1$s 可用 ~ %2$s 剩餘</string>
+    <string name="open_recording_folder">開啟錄音資料夾</string>
+    <string name="recording_list_is_empty">錄音清單為空\n\n勾選「通話錄音」來開始錄製通話</string>
+
+    <string name="source_default">（預設）</string>
+    <string name="source_mic">（麥克風）</string>
+    <string name="source_line">(Voice Line)</string>
+
+    <string name="call_recordings_support">通話錄音支援</string>
+    <string name="call_recordings_support_text">大部分的手機不支援高品質 (phone line) 通話錄音。要啟用通話錄音，請安裝開放原始碼韌體、選擇不同的編碼選項 (ogg, MediaRecorder…)、不同的音訊來源（phone line、麥克風、VoIP…），或是 root 您的手機。</string>
+    <string name="recordings_quality">錄音品質</string>
+    <string name="recordings_quality_text">如果您的手機不支援高品質通話錄音，這個應用程式會嘗試麥克風通話錄音（你可能只聽到一邊的聲音：你或是你的對話者）。</string>
+    <string name="task_managers">工作管理員</string>
+    <string name="task_managers_text">如果您的手機有電池最佳化或啟用工作管理員，請考慮停用它們，來讓應用程式持續在背景執行（可選）</string>
+
+    <string name="recording_enabled">錄音已啟用</string>
+    <string name="recording_disabled">錄音已停用</string>
+    <string name="callrecent_auto_save">在 (%1$d) 自動儲存</string>
+    <string name="calls_out">撥出</string>
+    <string name="calls_in">來電</string>
+    <string name="save_button">儲存</string>
+    <string name="mixer_paths_done">System mixer 已設定。請重新開機！</string>
+    <string name="mixer_paths_failed">無法設定 system mixer</string>
+
+    <string name="pref_storage_title">儲存路徑</string>
+    <string name="pref_rate_title">取樣率</string>
+    <string name="pref_encoding_title">編碼</string>
+    <string name="pref_encoding_summary">輸出檔案格式 (.wav, .m4a, ...)</string>
+    <string name="pref_mode_title">模式</string>
+    <string name="pref_mode_summary">錄音頻道</string>
+    <string name="pref_delete_title">刪除錄音</string>
+    <string name="pref_nameformat_title">名稱格式</string>
+    <string name="pref_calldialog_title">最近通話對話方塊</string>
+    <string name="pref_calldialog_summary">通話結束後顯示重新命名 / 最愛對話方塊</string>
+    <string name="pref_optimization_title">停用電池最佳化</string>
+    <string name="pref_optimization_summary">防止應用程式從記憶體移除</string>
+    <string name="pref_theme_title">應用程式佈景主題</string>
+    <string name="pref_theme_summary">設定應用程式佈景主題（暗 / 亮）</string>
+    <string name="pref_mixerpaths_title">System Mixer Incall Recording</string>
+    <string name="pref_mixerpaths_summary">允許 system mixer 為一般應用程式錄製通話</string>
+    <string name="pref_recordings">錄音</string>
+    <string name="pref_advanced">進階</string>
+    <string name="pref_application">應用程式</string>
+    <string name="menu_search">搜尋</string>
+    <string name="send_survey">傳送調查</string>
+    <string name="survey_know_issues">已知問題：</string>
+    <string name="survey_none">沒有調查</string>
+    <string name="survey_bad">無法運作</string>
+    <string name="survey_good">可運作</string>
+    <string name="survey_few_issues">有一些問題</string>
+    <string name="survey_view">檢視調查</string>
+    <string name="survey_status">狀態：</string>
+    <string name="sort_by_contact_z_a">Contact Z-A</string>
+    <string name="sort_by_contact_a_z">Contact A-Z</string>
+</resources>
