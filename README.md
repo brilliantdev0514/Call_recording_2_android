@@ -34,4 +34,4 @@ Check user surveys at project home page here:
 
   * [User survey's](https://axet.gitlab.io/android-call-recorder/)
 
-This project is tested with Browserstack.
+This project is tested with BrowserStack. Thank you for supporting open-source!
